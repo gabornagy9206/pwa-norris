@@ -1,0 +1,85 @@
+{
+  "configVersion": 1,
+  "index": "https://gabornagy9206.github.io/pwa-norris/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://gabornagy9206.github.io/pwa-norris/favicon.ico",
+        "https://gabornagy9206.github.io/pwa-norris/index.html",
+        "https://gabornagy9206.github.io/pwa-norris/main.371e1c22b7251e8e08e9.js",
+        "https://gabornagy9206.github.io/pwa-norris/polyfills.2f4a59095805af02bd79.js",
+        "https://gabornagy9206.github.io/pwa-norris/runtime.a66f828dca56eeb90e02.js",
+        "https://gabornagy9206.github.io/pwa-norris/styles.3f7a67cdb86630909676.css"
+      ],
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/.*"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://gabornagy9206.github.io/pwa-norris/assets/icons/icon-128x128.png",
+        "https://gabornagy9206.github.io/pwa-norris/assets/icons/icon-144x144.png",
+        "https://gabornagy9206.github.io/pwa-norris/assets/icons/icon-152x152.png",
+        "https://gabornagy9206.github.io/pwa-norris/assets/icons/icon-192x192.png",
+        "https://gabornagy9206.github.io/pwa-norris/assets/icons/icon-384x384.png",
+        "https://gabornagy9206.github.io/pwa-norris/assets/icons/icon-512x512.png",
+        "https://gabornagy9206.github.io/pwa-norris/assets/icons/icon-72x72.png",
+        "https://gabornagy9206.github.io/pwa-norris/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "jokes-api",
+      "patterns": [
+        "https:\\/\\/api\\.chucknorris\\.io\\/jokes\\/random"
+      ],
+      "strategy": "freshness",
+      "maxSize": 20,
+      "maxAge": 3600000,
+      "timeoutMs": 5000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "https://gabornagy9206.github.io/pwa-norris/assets/icons/icon-128x128.png": "794b1221d9a7b8857d9d6a84068e853486fd74e4",
+    "https://gabornagy9206.github.io/pwa-norris/assets/icons/icon-144x144.png": "8d8dafcb07a201e09a8a614ad35088e1ef0a34d2",
+    "https://gabornagy9206.github.io/pwa-norris/assets/icons/icon-152x152.png": "bb86dab9fa81ba24b67759bba8d0a8b9b94d0c85",
+    "https://gabornagy9206.github.io/pwa-norris/assets/icons/icon-192x192.png": "23b71c51c6fc21df79c09685b306f8afeff08cb1",
+    "https://gabornagy9206.github.io/pwa-norris/assets/icons/icon-384x384.png": "c10861055a10c545cbbac2ecead7d9c111f44a2f",
+    "https://gabornagy9206.github.io/pwa-norris/assets/icons/icon-512x512.png": "6f744060f7513a201c2354a16910ff41cc1f42fa",
+    "https://gabornagy9206.github.io/pwa-norris/assets/icons/icon-72x72.png": "141ec2cb7398f4423a49f0f8db3a9276113bcc48",
+    "https://gabornagy9206.github.io/pwa-norris/assets/icons/icon-96x96.png": "513873ba6ed8c9fbb8216f8799386c44cec4d41f",
+    "https://gabornagy9206.github.io/pwa-norris/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "https://gabornagy9206.github.io/pwa-norris/index.html": "7fbb0793f7eee3f4dd40ff8639cc820372cc6a5b",
+    "https://gabornagy9206.github.io/pwa-norris/main.371e1c22b7251e8e08e9.js": "2a66e4208e7a3fbd212ff149f5db14936fced560",
+    "https://gabornagy9206.github.io/pwa-norris/polyfills.2f4a59095805af02bd79.js": "8949bb1b1e302dda246f6ed9c2da703270360b1f",
+    "https://gabornagy9206.github.io/pwa-norris/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "https://gabornagy9206.github.io/pwa-norris/styles.3f7a67cdb86630909676.css": "3614982526e1c82b6f4a2e93538a57488f69fd91"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
